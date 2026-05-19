@@ -1,0 +1,162 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile and balance information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "balance": { "type": "number", "description": "Current account balance in USD" },
+        "role": { "type": "string", "enum": ["admin", "user"] },
+        "apiKey": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role", "balance"]
+    },
+    "Service": {
+      "title": "Service",
+      "description": "SMM service offered by the platform",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "category": { "type": "string" },
+        "name": { "type": "string" },
+        "rate": { "type": "number", "description": "Original rate from provider" },
+        "min": { "type": "number" },
+        "max": { "type": "number" },
+        "description": { "type": "string" },
+        "providerId": { "type": "string" },
+        "type": { "type": "string" },
+        "enabled": { "type": "boolean" },
+        "profitMargin": { "type": "number", "description": "Percentage profit margin (e.g. 50 for 50%)" },
+        "finalRate": { "type": "number", "description": "Final rate shown to user after margin" }
+      },
+      "required": ["id", "category", "name", "rate", "finalRate", "enabled"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "A service order placed by a user",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "serviceId": { "type": "string" },
+        "link": { "type": "string" },
+        "quantity": { "type": "number" },
+        "charge": { "type": "number", "description": "Amount charged to the user" },
+        "status": { "type": "string", "enum": ["pending", "processing", "completed", "cancelled", "refunded"] },
+        "providerOrderId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "serviceId", "quantity", "charge", "status"]
+    },
+    "Transaction": {
+      "title": "Transaction",
+      "description": "Financial transaction (deposit/withdraw)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "amount": { "type": "number" },
+        "type": { "type": "string", "enum": ["deposit", "order", "refund"] },
+        "method": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "amount", "type", "status"]
+    },
+    "Deposit": {
+      "title": "Deposit",
+      "description": "Manual deposit requests (e.g. Vodafone Cash)",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "amount": { "type": "number" },
+        "method": { "type": "string", "enum": ["vodafone_cash", "etisalat_cash", "bank_transfer"] },
+        "transactionId": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "approved", "rejected"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "amount", "method", "status"]
+    },
+    "PackageOrder": {
+      "title": "Package Order",
+      "description": "A custom request for design or growth packages",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "packageName": { "type": "string" },
+        "price": { "type": "string" },
+        "details": { "type": "string" },
+        "transferNumber": { "type": "string" },
+        "status": { "type": "string", "enum": ["pending", "processing", "completed"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "WebOrder": {
+      "title": "Web Order",
+      "description": "A custom request for website development",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string" },
+        "projectName": { "type": "string" },
+        "businessType": { "type": "string" },
+        "description": { "type": "string" },
+        "senderPhone": { "type": "string" },
+        "paymentMethod": { "type": "string" },
+        "amount": { "type": "string" },
+        "fileUrl": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "Settings": {
+      "title": "Settings",
+      "description": "Global platform configurations",
+      "type": "object",
+      "properties": {
+        "profit_margin": { "type": "number", "description": "Profit margin multiplier (e.g., 0.15 for 15%)" },
+        "provider_url": { "type": "string" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "/services/{serviceId}": {
+      "schema": "Service",
+      "description": "Available SMM services"
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "User orders"
+    },
+    "/package_orders/{orderId}": {
+      "schema": "PackageOrder",
+      "description": "Custom package requests"
+    },
+    "/web_orders/{orderId}": {
+      "schema": "WebOrder",
+      "description": "Website development requests"
+    },
+    "/transactions/{transactionId}": {
+      "schema": "Transaction",
+      "description": "Financial logs"
+    },
+    "/settings/global": {
+      "schema": "Settings",
+      "description": "Global settings"
+    },
+    "/config/global": {
+      "schema": "object",
+      "description": "Global settings (legacy)"
+    }
+  }
+}
