@@ -55,7 +55,7 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     videoUrl: 'https://www.youtube.com/embed/aw3TdaasCp8', 
     videoUrls: [
       'https://www.youtube.com/embed/ox2VnReqWdk',
-      'https://www.youtube.com/embed/3vW6G9E-A4U'
+      'https://www.youtube.com/embed/aw3TdaasCp8'
     ],
     description: lang === 'ar' ? 'تصميم فكرة وإخراج فيديو يعكس الهوية البصرية للشركة.' : 'Creative concept and direction for brand identity.' 
   },
