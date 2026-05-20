@@ -319,25 +319,13 @@ const LandingPage = () => {
       </section>
 </section>
 
-      {/* --- بداية الفوتر --- */}
       <footer className="relative z-10 py-20 px-6 max-w-7xl mx-auto border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-12" dir={isRtl ? 'rtl' : 'ltr'}>
         <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.2em] text-white/20">
-          <a href="#services" className="hover:text-blue-500 transition-colors">
-            {lang === 'ar' ? 'الخدمات' : 'Services'}
-          </a>
-          <a href="#portfolio" className="hover:text-blue-500 transition-colors">
-            {lang === 'ar' ? 'أعمالنا' : 'Portfolio'}
-          </a>
-          <a href="#contact" className="hover:text-blue-500 transition-colors">
-            {lang === 'ar' ? 'تواصل معنا' : 'Contact'}
-          </a>
+          <Link to="/privacy-policy" className="hover:text-white transition-colors">{t('privacyPolicy')}</Link>
+          <Link to="/refund-policy" className="hover:text-white transition-colors">{lang === 'ar' ? 'سياسة الاسترجاع' : 'Refund Policy'}</Link>
         </div>
-        
-        <div className="flex items-center gap-6">
-          <div className="w-12 h-px bg-white/10 hidden md:block" />
-          <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">
-            © 2026 Control P. {lang === 'ar' ? 'جميع الحقوق محفوظة.' : 'All rights reserved.'}
-          </span>
+        <div className="text-[10px] font-black uppercase tracking-[0.2em] text-white/10 text-center md:text-right">
+          {t('copyright')}
         </div>
       </footer>
     </div>
