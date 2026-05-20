@@ -317,7 +317,34 @@ const LandingPage = () => {
           ))}
         </div>
       </section>
+{/* --- بداية قسم إنتاج هوية فيديو متكاملة --- */}
+<section className="relative z-10 py-20 px-6 max-w-7xl mx-auto">
+  
+  {/* عنوان القسم */}
+  <h2 className="text-3xl md:text-4xl font-black text-center text-white mb-12 tracking-tight">
+    إنتاج هوية فيديو متكاملة
+  </h2>
+  
+  {/* شبكة الفيديوهات */}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    {/* الفيديو الأول */}
+    <div className="relative overflow-hidden pb-[56.25%] h-0 rounded-3xl border border-white/10 shadow-2xl shadow-blue-500/10 transition-all hover:border-blue-500/30">
+      <iframe 
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/aw3TdaasCp8?si=xg9tYRKixBi7Ob-l" 
+        title="YouTube video player" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerPolicy="strict-origin-when-cross-origin" 
+        allowFullScreen>
+      </iframe>
+    </div>
+    
+  </div>
 
+</section>
+{/* --- نهاية قسم إنتاج هوية فيديو متكاملة --- */}
       <footer className="relative z-10 py-20 px-6 max-w-7xl mx-auto border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-12" dir={isRtl ? 'rtl' : 'ltr'}>
         <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.2em] text-white/20">
           <Link to="/privacy-policy" className="hover:text-white transition-colors">{t('privacyPolicy')}</Link>
