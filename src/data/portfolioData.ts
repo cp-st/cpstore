@@ -27,7 +27,7 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     title: lang === 'ar' ? 'ريلز HOOK حماسية' : 'Exciting HOOK Reels', 
     category: 'Gaming', 
     thumbnail: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=600', 
-    videoUrl: 'https://www.youtube.com/embed/fA_E97pYcO8', 
+    videoUrl: 'https://www.youtube.com/embed/yg77ANMkEow1lWtT', 
     videoUrls: [
       'https://www.youtube.com/embed/fA_E97pYcO8',
       'https://www.youtube.com/embed/k9WOf0mY_94'
@@ -38,10 +38,10 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     id: 3, 
     title: lang === 'ar' ? 'أعلانات مطاعم وماكولات' : 'Restaurant & Food Ads', 
     category: 'Food', 
-    thumbnail: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=600', 
+    thumbnail: 'https://i.ibb.co/ycf6kKVw/Gemini-Generated-Image-lqcwflqcw.png', 
     videoUrl: 'https://www.youtube.com/embed/6_l9V9vj_jY', 
     videoUrls: [
-      'https://www.youtube.com/embed/6_l9V9vj_jY',
+      'https://www.youtube.com/embed/s4mt4QzyI9UEXym4',
       'https://www.youtube.com/embed/f-O7mBaeV_k',
       'https://www.youtube.com/embed/L_GvO8x8Rik'
     ],
@@ -51,7 +51,7 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     id: 4, 
     title: lang === 'ar' ? 'إنتاج هوية فيديو متكاملة' : 'Full Video Identity', 
     category: 'Corporate', 
-    thumbnail: 'https://images.unsplash.com/photo-1616440856004-9721323b7a5a?q=80&w=600', 
+    thumbnail: 'https://i.ibb.co/YBMLrqC6/0517-6-Cover.jpg', 
     videoUrl: 'https://www.youtube.com/embed/aw3TdaasCp8', 
     videoUrls: [
       'https://www.youtube.com/embed/ox2VnReqWdk',
