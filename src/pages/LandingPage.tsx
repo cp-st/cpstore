@@ -317,7 +317,6 @@ const LandingPage = () => {
           ))}
         </div>
       </section>
-</section>
 
       <footer className="relative z-10 py-20 px-6 max-w-7xl mx-auto border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-12" dir={isRtl ? 'rtl' : 'ltr'}>
         <div className="flex gap-12 text-[10px] font-black uppercase tracking-[0.2em] text-white/20">
