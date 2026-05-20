@@ -20,6 +20,7 @@ import Orders from './pages/Orders';
 import AddFunds from './pages/AddFunds';
 import AdminServices from './pages/AdminServices';
 import AdminDeposits from './pages/AdminDeposits';
+import { Analytics } from "@vercel/analytics/react";
 
 // Components
 import ProtectedRoute from './components/ProtectedRoute';
@@ -126,6 +127,7 @@ export default function App() {
             }}
           />
         </Router>
+       <Analytics />
       </LanguageProvider>
     </AuthProvider>
   );
