@@ -39,9 +39,9 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     title: lang === 'ar' ? 'أعلانات مطاعم وماكولات' : 'Restaurant & Food Ads', 
     category: 'Food', 
     thumbnail: 'https://i.ibb.co/ycf6kKVw/Gemini-Generated-Image-lqcwflqcw.png', 
-    videoUrl: 'https://www.youtube.com/embed/6_l9V9vj_jY', 
+    videoUrl: 'https://www.youtube.com/embed/lkfGoiDskMvLAxwI', 
     videoUrls: [
-      'https://www.youtube.com/embed/s4mt4QzyI9UEXym4',
+      'https://www.youtube.com/embed/lkfGoiDskMvLAxwI',
       'https://www.youtube.com/embed/f-O7mBaeV_k',
       'https://www.youtube.com/embed/L_GvO8x8Rik'
     ],
