@@ -52,9 +52,9 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     title: lang === 'ar' ? 'إنتاج هوية فيديو متكاملة' : 'Full Video Identity', 
     category: 'Corporate', 
     thumbnail: 'https://images.unsplash.com/photo-1616440856004-9721323b7a5a?q=80&w=600', 
-    videoUrl: 'https://www.youtube.com/embed/-_X6u-M4rYo', 
+    videoUrl: 'https://www.youtube.com/embed/aw3TdaasCp8', 
     videoUrls: [
-      'https://www.youtube.com/embed/-_X6u-M4rYo',
+      'https://www.youtube.com/embed/ox2VnReqWdk',
       'https://www.youtube.com/embed/3vW6G9E-A4U'
     ],
     description: lang === 'ar' ? 'تصميم فكرة وإخراج فيديو يعكس الهوية البصرية للشركة.' : 'Creative concept and direction for brand identity.' 
