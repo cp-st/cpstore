@@ -13,12 +13,12 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     id: 1, 
     title: lang === 'ar' ? 'إعلان سيارات سينمائي' : 'Cinematic Car Ad', 
     category: 'Commercial', 
-    thumbnail: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c340?q=80&w=600', 
+    thumbnail: 'https://i.ibb.co/F4Yv2k4g/703823375-1304336901171438-4049694884618675991-n.jpg', 
     videoUrl: 'https://www.youtube.com/embed/Dz52n-pm6Xo', 
     videoUrls: [
       'https://www.youtube.com/embed/Dz52n-pm6Xo',
-      'https://www.youtube.com/embed/m7atGkba-Z8',
-      'https://www.youtube.com/embed/WJq2AtE9EEY'
+      'https://www.youtube.com/embed/4-LYx3G1fbM',
+      'https://www.youtube.com/embed/Dz52n-pm6Xo'
     ],
     description: lang === 'ar' ? 'فيديو إعلاني للسيارات الفاخرة بجودة سينمائية كاملة.' : 'Cinematic commercial for luxury cars.' 
   },
@@ -26,11 +26,11 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     id: 2, 
     title: lang === 'ar' ? 'ريلز HOOK حماسية' : 'Exciting HOOK Reels', 
     category: 'Gaming', 
-    thumbnail: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=600', 
+    thumbnail: 'https://i.ibb.co/Fq49dgmw/cp.png', 
     videoUrl: 'https://www.youtube.com/embed/LC5eJWHaleQ', 
     videoUrls: [
-      'https://www.youtube.com/embed/fA_E97pYcO8',
-      'https://www.youtube.com/embed/k9WOf0mY_94'
+      'https://www.youtube.com/embed/HdOrEQL2VyA',
+      'https://www.youtube.com/embed/LC5eJWHaleQ'
     ],
     description: lang === 'ar' ? 'مونتاج سريع وحماسي لأهم لحظات الألعاب لمنصات التواصل.' : 'Fast-paced gaming highlights for social media.' 
   },
