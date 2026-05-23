@@ -14,9 +14,9 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     title: lang === 'ar' ? 'إعلان سيارات سينمائي' : 'Cinematic Car Ad', 
     category: 'Commercial', 
     thumbnail: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c340?q=80&w=600', 
-    videoUrl: 'https://www.youtube.com/embed/P-A_S82y-uY', 
+    videoUrl: 'https://www.youtube.com/embed/Dz52n-pm6Xo', 
     videoUrls: [
-      'https://www.youtube.com/embed/P-A_S82y-uY',
+      'https://www.youtube.com/embed/Dz52n-pm6Xo',
       'https://www.youtube.com/embed/m7atGkba-Z8',
       'https://www.youtube.com/embed/WJq2AtE9EEY'
     ],
@@ -27,7 +27,7 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     title: lang === 'ar' ? 'ريلز HOOK حماسية' : 'Exciting HOOK Reels', 
     category: 'Gaming', 
     thumbnail: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=600', 
-    videoUrl: 'https://www.youtube.com/embed/yg77ANMkEow1lWtT', 
+    videoUrl: 'https://www.youtube.com/embed/LC5eJWHaleQ', 
     videoUrls: [
       'https://www.youtube.com/embed/fA_E97pYcO8',
       'https://www.youtube.com/embed/k9WOf0mY_94'
@@ -39,9 +39,9 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     title: lang === 'ar' ? 'أعلانات مطاعم وماكولات' : 'Restaurant & Food Ads', 
     category: 'Food', 
     thumbnail: 'https://i.ibb.co/ycf6kKVw/Gemini-Generated-Image-lqcwflqcw.png', 
-    videoUrl: 'https://www.youtube.com/embed/lkfGoiDskMvLAxwI', 
+    videoUrl: 'https://www.youtube.com/embed/jMB5xCkrEP0', 
     videoUrls: [
-      'https://www.youtube.com/embed/lkfGoiDskMvLAxwI',
+      'https://www.youtube.com/embed/jMB5xCkrEP0',
       'https://www.youtube.com/embed/f-O7mBaeV_k',
       'https://www.youtube.com/embed/L_GvO8x8Rik'
     ],
