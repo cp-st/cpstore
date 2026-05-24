@@ -3,8 +3,9 @@ export interface PortfolioItem {
   title: string;
   category: string;
   thumbnail: string;
-  videoUrl: string;
+  videoUrl?: string;
   videoUrls?: string[];
+  imageUrls?: string[];
   description: string;
 }
 
