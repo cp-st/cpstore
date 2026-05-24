@@ -17,8 +17,8 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     videoUrl: 'https://www.youtube.com/embed/Dz52n-pm6Xo', 
     videoUrls: [
       'https://www.youtube.com/embed/Dz52n-pm6Xo',
-      'https://www.youtube.com/embed/4-LYx3G1fbM',
-      'https://www.youtube.com/embed/Dz52n-pm6Xo'
+      'https://www.youtube.com/embed/Dz52n-pm6Xo',
+      'https://www.youtube.com/embed/4-LYx3G1fbM'
     ],
     description: lang === 'ar' ? 'فيديو إعلاني للسيارات الفاخرة بجودة سينمائية كاملة.' : 'Cinematic commercial for luxury cars.' 
   },
@@ -30,7 +30,7 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     videoUrl: 'https://www.youtube.com/embed/LC5eJWHaleQ', 
     videoUrls: [
       'https://www.youtube.com/embed/HdOrEQL2VyA',
-      'https://www.youtube.com/embed/LC5eJWHaleQ'
+      'https://www.youtube.com/embed/VF3XekLxAAs'
     ],
     description: lang === 'ar' ? 'مونتاج سريع وحماسي لأهم لحظات الألعاب لمنصات التواصل.' : 'Fast-paced gaming highlights for social media.' 
   },
