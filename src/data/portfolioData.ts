@@ -96,4 +96,4 @@ export const videoPortfolioData = (lang: 'ar' | 'en'): PortfolioItem[] => [
     ],
     description: lang === 'ar' ? 'إنتاج محتوى مرئي احترافي للعيادات والمراكز الطبية.' : 'Professional visual content production for clinics and medical centers.'
   }
-];
+] ;
